@@ -9,7 +9,7 @@ class AuthRepositoryImpl extends AuthRepository {
 
   @override
   Future<User> checkAuthStatus(String token) {
-    throw dataSource.checkAuthStatus(token);
+    return dataSource.checkAuthStatus(token);
   }
 
   @override

@@ -16,6 +16,8 @@ class InputText extends FormzInput<String, InputTextError> {
     if (displayError == InputTextError.format) {
       return 'Solo se permite letras[a-z, A-Z]';
     }
+
+    return null;
   }
 
   @override
